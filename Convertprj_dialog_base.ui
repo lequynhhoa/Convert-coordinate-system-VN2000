@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConvertprjBatchDialogBase</class>
+ <widget class="QDialog" name="ConvertprjBatchDialogBase">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Chuyển hệ tọa độ và lưu file mới - GFD V.01</string>
+  </property>
+  <widget class="QDialogButtonBox" name="button_box">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>491</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Tool</string>
+    </attribute>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>211</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>10</y>
+       <width>241</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QCheckBox" name="checkBox_shp">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>131</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ERSI Shapefile (.SHP)</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Định dạng file đầu ra:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>250</y>
+       <width>46</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Lưu file: </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>250</y>
+       <width>341</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>250</y>
+       <width>51</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>90</y>
+       <width>241</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>221</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>System</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 103</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 104</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 104.5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 104.75</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 105</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 105.5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 105.75</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 106</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 106.25</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 106.5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 107</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 107.25</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 107.5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 107.75</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 108</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 108.25</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN2000 mui 3 KTT 108.5</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hệ tọa độ các lớp đầu vào:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hệ tọa độ file đầu ra:</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_output">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>221</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>System</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>WGS84 Lat/long - EPGS: 4326</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UTM Zone 48N - EPGS: 32648</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UTM Zone 49N - EPGS: 32649</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 102</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 103</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 104</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 104.5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 104.75</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 105</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 105.5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 105.75</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 106</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 106.25</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 106.5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 107</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 107.25</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 107.5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 107.75</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 108</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 108.25</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VN-2000 Hoi nhap mui 3 KTT 108.5</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <zorder>groupBox</zorder>
+    <zorder>groupBox_2</zorder>
+    <zorder>listWidget</zorder>
+    <zorder>label_2</zorder>
+    <zorder>lineEdit</zorder>
+    <zorder>toolButton</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>About</string>
+    </attribute>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>451</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>     Công cụ này giúp chuyển đổi hệ tọa độ VN2000 sang WGS84 Latlong, được phát triển 
+ bởi Green Field Consulting, Ltd. 
+
+     Mục đích của công cụ này giúp người sử dụng chuyển hệ tọa độ VN2000 nội bộ sang
+ WGS84Lat long để đưa sang TileMill, và đưa vào máy tính bảng chồng khớp với các loại 
+ảnh vệ tinh ở hệ WGS84.</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_box</sender>
+   <signal>accepted()</signal>
+   <receiver>ConvertprjBatchDialogBase</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-40</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_box</sender>
+   <signal>rejected()</signal>
+   <receiver>ConvertprjBatchDialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-40</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
