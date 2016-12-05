@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Convert-coordinate-system-vn2000 by lequynhhoa</title>
+    <title>Convert coordinate system(Tool chuyển hệ tọa độ trên QGIS) by lequynhhoa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,8 +11,8 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Convert-coordinate-system-vn2000</h1>
-      <h2 class="project-tagline">Convert</h2>
+      <h1 class="project-name">Convert coordinate system(Tool chuyển hệ tọa độ trên QGIS)</h1>
+      <h2 class="project-tagline">Convert coordinate</h2>
       <a href="https://github.com/lequynhhoa/Convert-coordinate-system-VN2000" class="btn">View on GitHub</a>
       <a href="https://github.com/lequynhhoa/Convert-coordinate-system-VN2000/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/lequynhhoa/Convert-coordinate-system-VN2000/tarball/master" class="btn">Download .tar.gz</a>
@@ -20,6 +20,53 @@
 
     <section class="main-content">
       <h2>
+<a id="công-cụ-chuyển-hệ-tọa-độ" class="anchor" href="#c%C3%B4ng-c%E1%BB%A5-chuy%E1%BB%83n-h%E1%BB%87-t%E1%BB%8Da-%C4%91%E1%BB%99" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Công cụ chuyển hệ tọa độ:</h2>
+
+<p>Dữ liệu bản đồ của hệ thống ngành Lâm nghiệp hầu hết đều đang ở hệ tọa độ VN2000 Nội bộ, lệch với Google earth 230m. Công cụ này cho phép người dùng chuyển hệ tọa độ, defined hệ tọa độ chồng khớp với Google earth sang định dạng shapefile (.shp)</p>
+
+<h3>
+<a id="các-chức-năng-chuyển-đổi" class="anchor" href="#c%C3%A1c-ch%E1%BB%A9c-n%C4%83ng-chuy%E1%BB%83n-%C4%91%E1%BB%95i" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Các chức năng chuyển đổi:</h3>
+
+<ul>
+<li>Save as sang định dạng .shp giữ nguyên hệ tọa độ đầu vào:
+Không quan trọng định dạng của file đầu vào.</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/sys_to_sys.png" alt="Image of token"></p>
+
+<ul>
+<li>Chuyển hệ tọa độ VN2000 Nội bộ sang WGS84 Latlong </li>
+</ul>
+
+<p>Bước chuyển đổi này phục vụ cho việc chuyển đổi dữ liệu bản đồ KKR sang phần mềm TileMill biên tập để cho vào máy tính bảng mà không cần phải khai báo thêm hệ tọa độ trên TileMill.
+Lưu ý: Đối với loại chuyển hệ (defined) tọa độ này cần chọn đúng kinh tuyến trục của địa phương cần chuyển đổi 
+<img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/1.png" alt="Image of token"></p>
+
+<ul>
+<li>
+<p>Chuyển hệ tọa độ VN2000 Nội bộ sang UTM </p>
+
+<p>Bước chuyển đổi này giúp người sử dụng chọn chuyển tọa độ từ VN2000 Nội bộ sang UTM Zone 48 hoặc zone 49 (chồng khớp GE)
+Lưu ý: Đối với loại chuyển hệ (defined) tọa độ này cần chọn đúng kinh tuyến trục của địa phương cần chuyển đổi 
+<img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/3degree_to_utm.png" alt="Image of token"></p>
+</li>
+<li><p>Chuyển hệ tọa độ VN2000 Nội bộ sang VN2000 Hội nhập
+Bước chuyển đổi này giúp người sử dụng chọn chuyển tọa độ từ VN2000 Nội bộ sang VN2000 Hội nhập 7 tham số (Bộ TNMT)
+Lưu ý: Đối với loại chuyển hệ (defined) tọa độ này cần chọn đúng kinh tuyến trục của địa phương cần chuyển đổi </p></li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/3degree_to_utm.png" alt="Image of token"></p>
+
+<h3>
+<a id="tác-giả" class="anchor" href="#t%C3%A1c-gi%E1%BA%A3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tác giả</h3>
+
+<p>Hoa Le, Green Field Consulting, ltd. <a href="http://gfd.com.vn/">http://gfd.com.vn/</a>
+Email: <a href="mailto:hoa.lq@gfd.com.vn">hoa.lq@gfd.com.vn</a></p>
+
+<h2>
+<a id="----------------------------------------------------------------------------------------------" class="anchor" href="#----------------------------------------------------------------------------------------------" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>----------------------------------------------------------------------------------------------</h2>
+
+<h2>
 <a id="welcome-to-qgis-convert-coordinate-system-vn2000" class="anchor" href="#welcome-to-qgis-convert-coordinate-system-vn2000" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to QGIS Convert coordinate system vn2000</h2>
 
 <p>This QGIS tool convert map layers (currently open in TOC) to VN2000 coordinate system.</p>
@@ -35,49 +82,14 @@
 </li>
 </ul>
 
-<h2>
-<a id="description-in-vietnamese" class="anchor" href="#description-in-vietnamese" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description in Vietnamese:</h2>
-
-<p>Dữ liệu bản đồ của hệ thống ngành Lâm nghiệp hầu hết đều đang ở hệ tọa độ VN2000 Nội bộ, lệch với Google earth 230m. Công cụ này cho phép người dùng chuyển hệ tọa độ, defined hệ tọa độ chồng khớp với Google earth sang định dạng shapefile (.shp)</p>
-
 <h3>
-<a id="các-chức-năng-chuyển-đổi" class="anchor" href="#c%C3%A1c-ch%E1%BB%A9c-n%C4%83ng-chuy%E1%BB%83n-%C4%91%E1%BB%95i" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Các chức năng chuyển đổi:</h3>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author:</h3>
 
-<ul>
-<li>Save as sang định dạng .shp giữ nguyên hệ tọa độ đầu vào:
-Không quan trọng định dạng của file đầu vào.</li>
-</ul>
-
-<p><img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/sys_to_sys.png" alt="Image of token"></p>
-
-<ul>
-<li><p>Chuyển hệ tọa độ VN2000 Nội bộ sang WGS84 Latlong 
-Bước chuyển đổi này phục vụ cho việc chuyển đổi dữ liệu bản đồ KKR sang phần mềm TileMill biên tập để cho vào máy tính bảng mà không cần phải khai báo thêm hệ tọa độ trên TileMill.
-Lưu ý: Đối với loại chuyển hệ (defined) tọa độ này cần chọn đúng kinh tuyến trục của địa phương cần chuyển đổi 
-<img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/1.png" alt="Image of token"></p></li>
-<li><p>Chuyển hệ tọa độ VN2000 Nội bộ sang UTM 
-Bước chuyển đổi này giúp người sử dụng chọn chuyển tọa độ từ VN2000 Nội bộ sang UTM Zone 48 hoặc zone 49 (chồng khớp GE)
-Lưu ý: Đối với loại chuyển hệ (defined) tọa độ này cần chọn đúng kinh tuyến trục của địa phương cần chuyển đổi 
-<img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/3degree_to_utm.png" alt="Image of token"></p></li>
-<li><p>Chuyển hệ tọa độ VN2000 Nội bộ sang VN2000 Hội nhập
-Bước chuyển đổi này giúp người sử dụng chọn chuyển tọa độ từ VN2000 Nội bộ sang VN2000 Hội nhập 7 tham số (Bộ TNMT)
-Lưu ý: Đối với loại chuyển hệ (defined) tọa độ này cần chọn đúng kinh tuyến trục của địa phương cần chuyển đổi </p></li>
-</ul>
-
-<p><img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/3degree_to_utm.png" alt="Image of token"></p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>Le Thi Quynh Hoa, Green Field Consulting, ltd. <a href="http://gfd.com.vn/">http://gfd.com.vn/</a></p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Email: <a href="mailto:hoa.lq@gfd.com.vn">hoa.lq@gfd.com.vn</a></p>
+<p>Hoa Le, Green Field Consulting, ltd. <a href="http://gfd.com.vn/">http://gfd.com.vn/</a>
+Email: <a href="mailto:hoa.lq@gfd.com.vn">hoa.lq@gfd.com.vn</a></p>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/lequynhhoa/Convert-coordinate-system-VN2000">Convert-coordinate-system-vn2000</a> is maintained by <a href="https://github.com/lequynhhoa">lequynhhoa</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/lequynhhoa/Convert-coordinate-system-VN2000">Convert coordinate system(Tool chuyển hệ tọa độ trên QGIS)</a> is maintained by <a href="https://github.com/lequynhhoa">lequynhhoa</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
