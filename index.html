@@ -35,19 +35,36 @@
 </li>
 </ul>
 
-<h3>
-<a id="description-in-vietnamese" class="anchor" href="#description-in-vietnamese" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description in Vietnamese:</h3>
+<h2>
+<a id="description-in-vietnamese" class="anchor" href="#description-in-vietnamese" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description in Vietnamese:</h2>
 
 <p>Dữ liệu bản đồ của hệ thống ngành Lâm nghiệp hầu hết đều đang ở hệ tọa độ VN2000 Nội bộ, lệch với Google earth 230m. Công cụ này cho phép người dùng chuyển hệ tọa độ, defined hệ tọa độ chồng khớp với Google earth sang định dạng shapefile (.shp)</p>
 
-<p>Các chức năng chuyển đổi: </p>
+<h3>
+<a id="các-chức-năng-chuyển-đổi" class="anchor" href="#c%C3%A1c-ch%E1%BB%A9c-n%C4%83ng-chuy%E1%BB%83n-%C4%91%E1%BB%95i" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Các chức năng chuyển đổi:</h3>
 
 <ul>
-<li>Save as sang định dạng .shp giữ nguyên hệ tọa độ đầu vào </li>
-<li>Chuyển hệ tọa độ VN2000 Nội bộ sang WGS84 Latlong </li>
-<li>Chuyển hệ tọa độ VN2000 Nội bộ sang UTM </li>
-<li>Chuyển hệ tọa độ VN2000 Nội bộ sang VN2000 Hội nhập</li>
+<li>Save as sang định dạng .shp giữ nguyên hệ tọa độ đầu vào:
+Không quan trọng định dạng của file đầu vào.</li>
 </ul>
+
+<p><img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/sys_to_sys.png" alt="Image of token"></p>
+
+<ul>
+<li><p>Chuyển hệ tọa độ VN2000 Nội bộ sang WGS84 Latlong 
+Bước chuyển đổi này phục vụ cho việc chuyển đổi dữ liệu bản đồ KKR sang phần mềm TileMill biên tập để cho vào máy tính bảng mà không cần phải khai báo thêm hệ tọa độ trên TileMill.
+Lưu ý: Đối với loại chuyển hệ (defined) tọa độ này cần chọn đúng kinh tuyến trục của địa phương cần chuyển đổi 
+<img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/1.png" alt="Image of token"></p></li>
+<li><p>Chuyển hệ tọa độ VN2000 Nội bộ sang UTM 
+Bước chuyển đổi này giúp người sử dụng chọn chuyển tọa độ từ VN2000 Nội bộ sang UTM Zone 48 hoặc zone 49 (chồng khớp GE)
+Lưu ý: Đối với loại chuyển hệ (defined) tọa độ này cần chọn đúng kinh tuyến trục của địa phương cần chuyển đổi 
+<img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/3degree_to_utm.png" alt="Image of token"></p></li>
+<li><p>Chuyển hệ tọa độ VN2000 Nội bộ sang VN2000 Hội nhập
+Bước chuyển đổi này giúp người sử dụng chọn chuyển tọa độ từ VN2000 Nội bộ sang VN2000 Hội nhập 7 tham số (Bộ TNMT)
+Lưu ý: Đối với loại chuyển hệ (defined) tọa độ này cần chọn đúng kinh tuyến trục của địa phương cần chuyển đổi </p></li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/lequynhhoa/Convert-coordinate-system-VN2000/master/images/3degree_to_utm.png" alt="Image of token"></p>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
